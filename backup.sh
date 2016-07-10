@@ -13,7 +13,7 @@ backup_dir=$HOME/$dir_name
 
 tar1="-cvf $backup_dir/b.tar --exclude $backup_dir $HOME"
 tar2="-czvf $backup_dir/b.tar.gz --exclude $backup_dir $HOME"
-tar3="-cjvf $backup_dir/b.tar.bzip2 --exclude $backup_dir/$HOME"
+tar3="-cjvf $backup_dir/b.tar.bzip2 --exclude $backup_dir $HOME"
 
 if [ $file_compression="L" ] ; then
     tar_opt=$tar1
